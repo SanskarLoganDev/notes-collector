@@ -41,7 +41,7 @@ This will be reaplaced by the html of specific pages, as required-->
         </div>
       </div>
     </nav>
-
+<!--get_flashed_messages() is a built in flask function to get all the messages that we have flashed-->
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
     messages %} {% for category, message in messages %} {% if category ==
     'error' %}

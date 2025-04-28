@@ -32,7 +32,7 @@ def logout():
     logout_user()
     return redirect(url_for('auth.login'))
 
-
+# This is a method to sign up new customers
 @auth.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
     if request.method == 'POST':
